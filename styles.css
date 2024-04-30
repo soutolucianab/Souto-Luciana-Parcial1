@@ -1,0 +1,98 @@
+/* Importar la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Selector Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos del header */
+header {
+    background-color: #2980b9;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 0; /* Eliminar el margen inferior por defecto */
+    color: #fff;
+}
+
+/* Estilos del contenido */
+.content {
+    background-color: antiquewhite;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Centrar elementos verticalmente */
+    font-size: 15px;
+    line-height: 2.5;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%; /* Bordess redondos */
+}
+
+
+/* Estilos para el texto justificado */
+.column p {
+    text-align: justify;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #ffde59;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+footer img {
+    width: 200px;
+    height: auto;
+}
+
+/* Media query para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    .column {
+        width: 100%; /* Asegurar que ocupe todo el ancho */
+        text-align: center; /* Alinear el texto al centro */
+    }
+}
